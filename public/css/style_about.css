@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+.mainContainer {
+  display: flex;
+}
+
+.navbar {
+  width: 25%;
+  height: 100vh;
+  background-color: rgb(149, 158, 158);
+}
+.navbar nav {
+  padding: 4.5rem;
+}
+
+.navbar nav li {
+  list-style: none;
+  font-size: 3rem;
+  padding: 3rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+a:hover {
+  color: azure;
+}
+.contact {
+  bottom: 0;
+  position: fixed;
+  border-top: 0.2rem solid black;
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/background.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.about {
+    border-right: 0.2rem solid gray;
+    height: 80%;
+    margin: 2%;
+    font-size: 2rem;
+    padding-right: 2%;
+  }
+
+  .image1 {
+    height: 40vh;
+  }
+  .image1 img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 1250px) {
+    html{
+      font-size:52.5%
+    }
+   
+  }
+  @media (max-width: 860px) {
+    html{
+      font-size:32.5%
+    }
+  }
